@@ -184,8 +184,22 @@ int main(){
                           }
                           break;
                           case 2:{//Mostrar por continente
+                            string continent;
+                            string substring;
+                            int pos = -1;
+                            bool esta = false;
+                            cout << "Ingrese un continente: ";
+                            cin >> continent;
+
+                            
+
                             for(int i = 0; i < lista.size(); i++){
-                               
+                               if(size_t indez =lista.at(i).find(continent)){
+                                  esta = true;
+                               }
+                            }
+                            if(esta){
+                              cout << "está";
                             }
                           }
                           break;
